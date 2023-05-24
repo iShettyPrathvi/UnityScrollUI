@@ -13,16 +13,15 @@ public class ToggleAnim : MonoBehaviour
     public float scaleTo = 2.0f;
     public float resetDuration = 0.5f;
 
-    [Header("Easing")]
-    public float duration = 1f;
+    [Header("Easing")] public float duration = 1f;
     public float amplitude = 1.0f;
     public float period = 0.3f;
     public bool useAnimCurve;
     public AnimationCurve animationCurve;
-    
+
     private Coroutine resizeCoroutine;
     private GameObject childObj; //icon object
-    
+
     public void Init()
     {
         myLayoutElement = GetComponent<LayoutElement>();
@@ -53,19 +52,27 @@ public class ToggleAnim : MonoBehaviour
         {
             //easing
             float t = elapsedTime / duration;
-            float easedT = animationCurve.Evaluate(t);
-                //Easing.EaseOutElastic(t, amplitude, period);
+            float easedT = t;
+            if (useAnimCurve)
+            {
+                easedT = animationCurve.Evaluate(t);
+            }
+            else
+            {
+                easedT = Easing.EaseOutElastic(t, amplitude, period);
+            }
 
             float newWidth = Mathf.Lerp(currentWidth, newSize, easedT);
             myLayoutElement.flexibleWidth = newWidth;
-            
+
             float newScale = Mathf.Lerp(currentScale.y, finalScaleY, easedT);
             childObj.transform.localScale = new Vector3(newScale, newScale, 1.0f);
 
             elapsedTime += Time.deltaTime;
-            
+
             yield return null;
         }
+
         childObj.transform.localScale = new Vector3(finalScaleY, finalScaleY, 1.0f);
         myLayoutElement.flexibleWidth = newSize;
     }

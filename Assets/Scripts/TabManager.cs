@@ -12,9 +12,7 @@ public class TabManager : MonoBehaviour
     public float duration = 1f;
     public AnimationCurve curve;
     private Vector3 initialPosition;
-    private float elapsedTime = 0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         ToggleAnimList = GetComponentsInChildren<ToggleAnim>();
