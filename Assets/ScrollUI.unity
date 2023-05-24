@@ -525,6 +525,7 @@ RectTransform:
   - {fileID: 8776855029915051778}
   - {fileID: 1919681640}
   - {fileID: 1807306734713098746}
+  - {fileID: 1715872575}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -622,7 +623,6 @@ GameObject:
   - component: {fileID: 1325236156}
   - component: {fileID: 1325236155}
   - component: {fileID: 1325236154}
-  - component: {fileID: 1325236159}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -664,9 +664,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLayoutElement: {fileID: 0}
   DefaultWidth: 1
-  SelectedWidth: 1.6
-  lerpSpeed: 8
+  SelectedWidth: 2
   scaleTo: 2
+  resetDuration: 0.4
+  duration: 1
+  amplitude: 1
+  period: 0.3
+  useAnimCurve: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.48544323
+      value: 0.97751725
+      inSlope: 0.5624466
+      outSlope: 0.5624466
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1325236155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,18 +810,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325236152}
   m_CullTransparentMesh: 1
---- !u!225 &1325236159
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325236152}
-  m_Enabled: 1
-  m_Alpha: 0.6
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1433375023
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +824,6 @@ GameObject:
   - component: {fileID: 1433375027}
   - component: {fileID: 1433375026}
   - component: {fileID: 1433375025}
-  - component: {fileID: 1433375030}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -841,9 +865,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLayoutElement: {fileID: 0}
   DefaultWidth: 1
-  SelectedWidth: 1.6
-  lerpSpeed: 8
+  SelectedWidth: 2
   scaleTo: 2
+  resetDuration: 0.4
+  duration: 1
+  amplitude: 1
+  period: 0.3
+  useAnimCurve: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.48544323
+      value: 0.97751725
+      inSlope: 0.5624466
+      outSlope: 0.5624466
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1433375026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,18 +1011,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433375023}
   m_CullTransparentMesh: 1
---- !u!225 &1433375030
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433375023}
-  m_Enabled: 1
-  m_Alpha: 0.6
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1484562262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1316,6 @@ GameObject:
   - component: {fileID: 1665393629}
   - component: {fileID: 1665393628}
   - component: {fileID: 1665393627}
-  - component: {fileID: 1665393632}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -1309,9 +1357,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLayoutElement: {fileID: 0}
   DefaultWidth: 1
-  SelectedWidth: 1.6
-  lerpSpeed: 8
+  SelectedWidth: 2
   scaleTo: 2
+  resetDuration: 0.4
+  duration: 1
+  amplitude: 1
+  period: 0.3
+  useAnimCurve: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.48544323
+      value: 0.97751725
+      inSlope: 0.5624466
+      outSlope: 0.5624466
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1665393628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1418,18 +1503,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665393625}
   m_CullTransparentMesh: 1
---- !u!225 &1665393632
-CanvasGroup:
+--- !u!1 &1715872574
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665393625}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715872575}
+  - component: {fileID: 1715872578}
+  - component: {fileID: 1715872577}
+  - component: {fileID: 1715872576}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1715872575
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715872574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 512849506}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -200.00002}
+  m_SizeDelta: {x: 400, y: 400}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1715872576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715872574}
   m_Enabled: 1
-  m_Alpha: 0.6
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73667cf934c54a8bb9e3ae4b68c92db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  targetScale: {x: 2, y: 2, z: 0}
+  duration: 2
+  amplitude: 1
+  period: 0.3
+--- !u!114 &1715872577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715872574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1715872578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715872574}
+  m_CullTransparentMesh: 1
 --- !u!1 &1835344529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,7 +1881,6 @@ GameObject:
   - component: {fileID: 1963042455}
   - component: {fileID: 1963042454}
   - component: {fileID: 1963042453}
-  - component: {fileID: 1963042458}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -1757,9 +1922,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLayoutElement: {fileID: 0}
   DefaultWidth: 1
-  SelectedWidth: 1.6
-  lerpSpeed: 8
+  SelectedWidth: 2
   scaleTo: 2
+  resetDuration: 0.4
+  duration: 1
+  amplitude: 1
+  period: 0.3
+  useAnimCurve: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.48544323
+      value: 0.97751725
+      inSlope: 0.5624466
+      outSlope: 0.5624466
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1963042454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,18 +2068,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963042451}
   m_CullTransparentMesh: 1
---- !u!225 &1963042458
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963042451}
-  m_Enabled: 1
-  m_Alpha: 0.6
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &2093247793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,9 +2232,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLayoutElement: {fileID: 0}
   DefaultWidth: 1
-  SelectedWidth: 1.6
-  lerpSpeed: 8
+  SelectedWidth: 2
   scaleTo: 2
+  resetDuration: 0.4
+  duration: 1
+  amplitude: 1
+  period: 0.3
+  useAnimCurve: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.48544323
+      value: 0.97751725
+      inSlope: 0.5624466
+      outSlope: 0.5624466
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1807306734149031959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2185,7 +2412,6 @@ GameObject:
   - component: {fileID: 1807306734149031959}
   - component: {fileID: 1807306734149031978}
   - component: {fileID: 1807306734149031958}
-  - component: {fileID: 1807306734149031981}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2193,18 +2419,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!225 &1807306734149031981
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807306734149031980}
-  m_Enabled: 1
-  m_Alpha: 0.6
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &1807306734713098727
 MonoBehaviour:
   m_ObjectHideFlags: 0
